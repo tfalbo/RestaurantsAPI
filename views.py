@@ -28,11 +28,26 @@ app = Flask(__name__)
 
 @app.route('/restaurants', methods = ['GET', 'POST'])
 def all_restaurants_handler():
-  #YOUR CODE HERE
+    if request.method == 'GET':
+        #Call the method to Get all of the restaurants
+        return "Get all restaurant"
+    elif request.method == 'POST':
+        #Call the method to make a new restaurant
+        return "Make a restaurant"
+
 
 @app.route('/restaurants/<int:id>', methods = ['GET','PUT', 'DELETE'])
 def restaurant_handler(id):
-  #YOUR CODE HERE
+    if request.method == 'GET':
+        #Call the method to get a restaurant
+        return "Get one restaurant"
+    elif request.method == 'POST':
+        #Call the method to edit a restaurant
+        return "Edit a restaurant"
+    elif request.method == 'DELETE':
+        #Call the method to delete a restaurant
+        return "Delete a restaurant"
+
 
 if __name__ == '__main__':
     app.debug = True
