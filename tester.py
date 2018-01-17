@@ -112,7 +112,7 @@ else:
 	else:
 		print "Test 4 PASS: Succesfully updated first restaurant"
 
-#TEST FIVE -- DELETE SECOND RESTARUANT 
+#TEST FIVE -- DELETE SECOND RESTARUANT
 try:
 		print "Attempting Test 5: Deleteing the second restaurant from the server..."
 		result = all_result
@@ -131,4 +131,3 @@ except Exception as err:
 else:
 	print "Test 5 PASS: Succesfully updated first restaurant"
 	print "ALL TESTS PASSED!"
-
